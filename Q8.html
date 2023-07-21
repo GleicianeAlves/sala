@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function verificarEmprestimo(valorParcela, rendaCliente) {
+        const limitePorcentagem = 30;
+        const limiteParcela = (rendaCliente * limitePorcentagem) / 100;
+
+        if (valorParcela <= limiteParcela) {
+            return "EMPRÉSTIMO APROVADO";
+        } else {
+            return "EMPRÉSTIMO NÃO APROVADO";
+        }
+        }
+        const valorParcela = parseFloat(prompt("Digite o valor da parcela:"));
+        const rendaCliente = parseFloat(prompt("Digite o valor da renda do cliente:"));
+
+        const resultado = verificarEmprestimo(valorParcela, rendaCliente);
+        console.log(resultado);
+
+    </script>
+</body>
+</html>

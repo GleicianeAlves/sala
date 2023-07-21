@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calIdade(anoNascimento, anoAtual) {
+        return anoAtual - anoNascimento;
+        }
+
+        const anoNascimento = parseInt(prompt("Digite o ano de nascimento:"));
+        const anoAtual = parseInt(prompt("Digite o ano atual:"));
+        const idade = calIdade(anoNascimento, anoAtual);
+
+        console.log(`A idade da pessoa é: ${idade} anos`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function convertMoeda(valorReal, tipoMoeda) {
+            const taxaDolar = 5.50;
+            const taxaEuro = 7.00;
+
+            if (tipoMoeda === "d") {
+                return (valorReal / taxaDolar).toFixed(2);
+            } else if (tipoMoeda === "e") {
+                return (valorReal / taxaEuro).toFixed(2);
+            } else {
+                return "Tipo de moeda inválido. Use 'd' para dólar ou 'e' para euro.";
+            }
+            }
+
+            const valorReal = parseFloat(prompt("Digite o valor em real:"));
+            const tipoMoeda = prompt("Digite o tipo de moeda (d para dólar ou e para euro):").toLowerCase();
+            const valorConvertido = convertMoeda(valorReal, tipoMoeda);
+            console.log(`O valor convertido é: ${valorConvertido}`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+<body>
+    <script>
+        const temperaturasSemana = [];
+
+       for (let dia=1; dia <= 7; dia++){
+        const temperatura = parseFloat(prompt(`Média da temperatura do dia ${dia}:`));
+        temperaturasSemana.push(temperatura);
+}   
+        const menorTemperatura = Math.min(...temperaturasSemana);
+        const maiorTemperatura = Math.max(...temperaturasSemana);
+
+        console.log(`Maior temperatura da semana: ${menorTemperatura}°C`);
+        console.log(`Menor temperatura da semana: ${menorTemperatura}°C`);
+       
+
+    </script>
+</body>
+</html>
